@@ -4,24 +4,58 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Facebook - log in or sign up</title>
-    <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
-    <div class="container">
-      <div class="left">
-        <img src="logo.svg" alt="Facebook logo" />
-        <p>Facebook helps you connect and share with the people in your life.</p>
+  <body class="bg-gray-100">
+    <!-- container containing the facebook logo and all the buttons -->
+    <div
+      class="container mt-20 center-true flex items-center justify-center"
+    >
+    <!-- left container containg the logo and the tagline of facebook-->
+      <div class="left mx-14">
+        <!-- image of the logo -->
+        <img class="w-60" src="logo.svg" alt="Facebook logo" />
+        <!-- tagline of facebook -->
+        <p class="text-3x1 mx-6">
+          Facebook helps you connect and share <br />
+          with the people in your life.
+        </p>
       </div>
-      <div class="right">
-        <input type="text" placeholder="Email Address or Phone Number">
-        <input type="password" placeholder="Password">
-        <button class="btn">Log In</button>
-        <span>Forgotten password?</span>
-        <hr>
-        <button class="btn">Create Account</button>
+      <!-- right container containing all the button and input button of email and password -->
+      <div class="right flex flex-col bg-white p-5 rounded-lg w-1/4">
+        <!-- input box for email address or phone number -->
+        <input
+          class="px-2 h-10 my-2 border border-1 border-gray-400 rounded-lg"
+          type="text"
+          placeholder="Email Address or Phone Number"
+        />
+        <!-- input box for password -->
+        <input
+          class="px-2 h-10 my-2 border border-1 border-gray-400 rounded-lg"
+          type="password"
+          placeholder="Password"
+        />
+        <!-- button for login -->
+        <button
+          class="bg-blue-600 text-white rounded-md my-2 py-2 font-bold text-xl cursor-pointer"
+        >
+          Log In
+        </button>
+        <!-- link for forgot passwod -->
+        <span
+          class="text-blue-600 text-center text-sm my-2 cursor-pointer hover-underline"
+          >Forgotten password?</span
+        >
+        <hr class="my-2" />
+        <!-- button of create new account for new user -->
+        <button
+          class="bg-green-600 text-white rounded-md my-2 py-2 px-2 mx-auto font-bold text-xl cursor-pointer w-fit"
+        >
+          Create New Account
+        </button>
       </div>
     </div>
+    <!-- tailwind script -->
     <script src="https://cdn.tailwindcss.com"></script>
   </body>
 </html>
